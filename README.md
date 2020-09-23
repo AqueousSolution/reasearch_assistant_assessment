@@ -60,6 +60,7 @@ a) Why is it a bad idea to use recursion method to find the fibonacci of a numbe
 
 Ans
 
+Using recursion method to find the fibonacci of a number is a bad idea because as the nth term  parameter(e.g. 67, 100, etc) increases  it takes a longer time to generate our fibonacci number. The reason for the poor performance is due to the heavy push-pop of the stack memory in each recursive call. It is faster and better to use the iteration method instead
 
 b) Write a function that takes in a Proth Number and uses Proth's theorem to determine if said number is prime? You can write this in any programming language but C/C++/Golang are preferred
 
