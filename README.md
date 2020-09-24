@@ -75,7 +75,6 @@ const prothPrimeChecker = (prothNumber) =>{
 	for(let a = 2; a<15; a++){
 		arr.push(Math.pow(a,power)+1)
 	}
-	console.log(arr);
 	const factorCheck = arr.map(el=>el/prothNumber);
 	
    const isItPrime = factorCheck.some((e)=>Number.isInteger(e));
@@ -83,3 +82,34 @@ const prothPrimeChecker = (prothNumber) =>{
 }
 
 3. MATHS
+
+(Please show your workings). Over all real numbers, find the minimum value of a positive real number, y such that
+y = sqrt((x+6)^2 + 25) + sqrt((x-6)^2 + 121)
+
+ANS
+
+Separating the two roots,
+sqrt((x+6)^2 +5^2) is the distance from the point (x,0) to (-6,5)
+sqrt((x-6)^2 +11^2) is the distance from the point (x,0) to (6,-11)
+
+slope = Dy/Dx = -11-5/6+6 = -4/3
+
+y= -4x/3 +b
+
+To find b,
+Insert the positional values of any pair of x and y into the slope intercept
+5 = -4x/3(-6) + b
+b = -3
+
+Therefore, y = -4x/3 - 3
+which intercepts the x axis when y=0, which is when
+0 =-4x/3 -3
+x=-9/4
+x=-2.25
+
+Substituting the value of x into the main equation
+y = sqrt((-2.25+6)^2 + 25) + sqrt((-2.25-6)^2 + 121)
+y=20
+
+The minimum value of y is 20 and it occurs when x  = -2.25
+
