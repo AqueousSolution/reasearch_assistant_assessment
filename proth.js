@@ -12,7 +12,7 @@ const isThisPowerOfTwo =(num)=>{
 		}
 
 //This function checks if a number is a proth number cos we need to validate that the user is inputing a proth
-const isproth =(num) =>{
+const isProth =(num) =>{
 
 	    let k=1;
 	        while (k<(num/k)){
@@ -43,7 +43,7 @@ const isproth =(num) =>{
 
 
 	let deductOne = num - 1;
-	if(isproth(deductOne)){
+	if(isProth(deductOne)){
 		return prothPrimeChecker(num)
 }else{
     return("This is not a proth number,please enter a proth number");
