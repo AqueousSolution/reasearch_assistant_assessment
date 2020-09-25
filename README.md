@@ -1,4 +1,4 @@
-This contains my answers to the assessment for the Research Assistant job
+This contains my answers to the assessment for the Research Assistant job at Buycoins
 
 My answers are divided into two parts
 a) The Code named proth.js
