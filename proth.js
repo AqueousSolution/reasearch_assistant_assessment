@@ -28,7 +28,7 @@ const isProth =(num) =>{
 	}
 
 //This function checks if a proth number is a prime number
-	const prothPrimeChecker = (prothNumber) =>{
+	const prothPrimeCheck = (prothNumber) =>{
 	let arr = [];
 	let d = prothNumber - 1;
 	let power = d/2;
@@ -44,7 +44,7 @@ const isProth =(num) =>{
 
 	let deductOne = num - 1;
 	if(isProth(deductOne)){
-		return prothPrimeChecker(num)
+		return prothPrimeCheck(num)
 }else{
     return("This is not a proth number,please enter a proth number");
 }
